@@ -3,12 +3,12 @@
  * and open the template in the editor.
  */
 
-package ar.com.qcho.eda.tp1;
+package lab.tp1;
 
 /**
  *
  * @author Qcho
  */
-public class Exercise6 {
+public class Exercise08 {
 
 }

@@ -1,10 +1,10 @@
-package ar.com.qcho.eda.tp1;
+package lab.tp1;
 
 import java.util.Arrays;
 
-import ar.com.qcho.eda.Util;
+import lab.Util;
 
-public class Exercise5 {
+public class Exercise05 {
 	
 	public static void main(String[] args) {
 		Integer[] array = Util.getRandomIntegerArray(100);
