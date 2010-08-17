@@ -1,0 +1,12 @@
+#############
+# IDE files #
+#############
+
+nbproject
+manifest.mf
+
+###################
+# Compiled source #
+###################
+
+build
