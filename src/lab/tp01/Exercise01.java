@@ -8,7 +8,7 @@ import lab.Util;
 /**
  *  1. Determinar el orden de complejidad temporal requerido para realizar las siguientes operaciones:
  *	a. Buscar un elemento en un arreglo desordenado.
- *	    Orden: {@code n}.
+ *	    Orden: {@code n}. Voy de a uno.
  *	    Peor Caso: {@code i=n}}.
  *
  *	b. Acceder al i-ésimo elemento de un arreglo.
@@ -29,7 +29,7 @@ import lab.Util;
  *
  *	f. Búsqueda binaria sobre un arreglo ordenado.
  *	    Orden: {@code log(n)}.
- *	    Peor Caso: no presenta. //TODO: consultar.
+ *	    Peor Caso: no presenta.
  *
  *	g. Eliminar el último elemento de una lista lineal simplemente encadenada.
  *	    Orden: {@code n}. Moverme hasta el final y borrarlo.
