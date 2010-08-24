@@ -3,7 +3,8 @@ package lab.tp01;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
-import lab.Util;
+
+import lab.util.Util;
 
 /**
  *  1. Determinar el orden de complejidad temporal requerido para realizar las siguientes operaciones:

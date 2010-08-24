@@ -1,7 +1,9 @@
 package lab.tp01;
 
 import java.util.Arrays;
-import lab.Util;
+
+import lab.util.Util;
+
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartFrame;
 import org.jfree.chart.JFreeChart;

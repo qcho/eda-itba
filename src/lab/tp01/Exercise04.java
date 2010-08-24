@@ -2,7 +2,7 @@ package lab.tp01;
 
 import java.util.Arrays;
 
-import lab.Util;
+import lab.util.Util;
 
 /**
  *  4. Implementar un método que determine si un arreglo está ordenado ascendentemente o no.

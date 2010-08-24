@@ -1,7 +1,7 @@
 /*****************************************
  * Systematically generate combinations.
  *****************************************/
-package lab;
+package lab.util;
 
 import java.math.BigInteger;
 

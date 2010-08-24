@@ -1,7 +1,8 @@
 package lab.tp01;
 
 import java.util.Arrays;
-import lab.Util;
+
+import lab.util.Util;
 
 /**
  * 6. Escribir un algoritmo eficiente para determinar si existe un entero i tal

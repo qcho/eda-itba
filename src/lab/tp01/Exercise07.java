@@ -6,7 +6,8 @@
 package lab.tp01;
 
 import java.util.Arrays;
-import lab.Util;
+
+import lab.util.Util;
 
 /**
  * 

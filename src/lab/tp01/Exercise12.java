@@ -1,9 +1,10 @@
 package lab.tp01;
 
 import java.util.Arrays;
-import lab.CombinationGenerator;
-import lab.PermutationGenerator;
-import lab.SystematicGenerator;
+
+import lab.util.CombinationGenerator;
+import lab.util.PermutationGenerator;
+import lab.util.SystematicGenerator;
 
 /**
  * 12. Escribir un programa que dado un string en donde no hay caracteres repetidos imprima todas las posibles combinaciones de sus caracteres.

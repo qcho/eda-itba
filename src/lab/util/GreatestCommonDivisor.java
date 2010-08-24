@@ -1,4 +1,4 @@
-package lab;
+package lab.util;
 
 //------------------------------------------------------
 // This class uses different algorithms to compute the

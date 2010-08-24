@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-import lab.Util;
+import lab.util.Util;
 
 /**
  * 5. Implementar un método que determine si un arreglo tiene valores duplicados o no. 
