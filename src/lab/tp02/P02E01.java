@@ -21,6 +21,7 @@ public class P02E01<E> implements Set<E> {
 		return list.isEmpty();
 	}
 
+	@SuppressWarnings("unchecked") //ClassCastException (E)o if !(o instanceof E)
 	@Override
 	public boolean contains(Object o) {
 		return list.contains((E)o);
@@ -28,7 +29,6 @@ public class P02E01<E> implements Set<E> {
 
 	@Override
 	public Iterator<E> iterator() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
