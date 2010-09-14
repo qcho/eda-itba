@@ -7,7 +7,7 @@ import java.util.List;
  *	una lista. ¿Cuál es el orden de complejidad temporal en cada caso?
  * @author Qcho
  */
-public class Exercise03 {
+public class Ex03 {
 
     /**
      * Orden: depende de la implementación de list; del orden de .get(i)

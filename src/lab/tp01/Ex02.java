@@ -22,7 +22,7 @@ import org.jfree.ui.RefineryUtilities;
  * 
  * @author Qcho
  */
-public class Exercise02 {
+public class Ex02 {
 
 	private static final int MAX_ARRAY = 500;
 
@@ -50,9 +50,9 @@ public class Exercise02 {
 			Integer[] array2 = Arrays.copyOfRange(baseArray, 0, size);
 
 			long bSortCompStart = System.currentTimeMillis();
-			bSortComp.add(size, Exercise02.bubbleSort(array1));
+			bSortComp.add(size, ArrayUtils.bubbleSort(array1));
 			long bSortCompEnd = System.currentTimeMillis();
-			bSortOptComp.add(size, Exercise02.bubbleSortOptimized(array2));
+			bSortOptComp.add(size, ArrayUtils.bubbleSortOptimized(array2));
 			long bSortOptCompEnd = System.currentTimeMillis();
 			// System.out.println("array (" + comparations + "): " +
 			// Arrays.toString(array));
@@ -92,65 +92,5 @@ public class Exercise02 {
 		RefineryUtilities.centerFrameOnScreen(frame2);
 		frame2.setLocation(frame2.getLocation().x + (frame2.getSize().width / 2 + 10), frame2.getLocation().y);
 		frame2.setVisible(true);
-	}
-
-	/**
-	 * BubbleSort for generic arrays.
-	 * 
-	 * @param <T>
-	 *            any Comparable class.
-	 * @param array
-	 *            the array to be sorted.
-	 * @return the number of comparations made. Useful for Order Calculation.
-	 */
-	public static <T extends Comparable<? super T>> int bubbleSort(T[] array) {
-		boolean swapped;
-		int comparations = 0;
-		do {
-			swapped = false;
-			for (int i = 0; i < array.length - 1; i++) {
-				if (array[i].compareTo(array[i + 1]) > 0) {
-					Util.swap(array, i, i + 1);
-					swapped = true;
-				}
-				comparations++; // if
-				comparations++; // for
-			}
-			comparations++; // salida del for
-			comparations++; // while
-		} while (swapped);
-		// System.out.println(comparations);
-		return comparations;
-	}
-
-	/**
-	 * Optimized BubbleSort for generic arrays.
-	 * 
-	 * @param <T>
-	 *            any Comparable class.
-	 * @param array
-	 *            the array to be sorted.
-	 * @return the number of comparations made. Useful for Order Calculation.
-	 */
-	public static <T extends Comparable<? super T>> int bubbleSortOptimized(T[] array) {
-		int n = array.length;
-		int newn;
-		int comparations = 0;
-		do {
-			newn = 0;
-			for (int i = 0; i < n - 1; i++) {
-				if (array[i].compareTo(array[i + 1]) > 0) {
-					Util.swap(array, i, i + 1);
-					newn = i + 1;
-				}
-				comparations++; // if
-				comparations++; // for
-			}
-			n = newn;
-			comparations++; // salida del for
-			comparations++; // while
-		} while (n > 1);
-		// System.out.println(comparations);
-		return comparations;
 	}
 }

@@ -12,7 +12,7 @@ import lab.util.SystematicGenerator;
  *
  * @author Qcho
  */
-public class Exercise12 {
+public class Ex12 {
 
     public static void main(String[] args) {
 

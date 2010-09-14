@@ -8,7 +8,7 @@ package lab.tp01;
  * 
  * @author Qcho
  */
-public class Exercise08 {
+public class Ex08 {
 
 	public static void main(String[] args) {
 		System.out.println("2^5: " + pow(2, 5));

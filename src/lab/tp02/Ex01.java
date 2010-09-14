@@ -7,7 +7,7 @@ import java.util.Set;
 import lab.eda.src.linearlists.IterativeLinearLinkedList;
 import lab.eda.src.linearlists.LinearLinkedList;
 
-public class P02E01<E> implements Set<E> {
+public class Ex01<E> implements Set<E> {
 	
 	LinearLinkedList<E> list = new IterativeLinearLinkedList<E>();
 

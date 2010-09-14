@@ -8,7 +8,7 @@ import java.util.HashSet;
  * 
  * @author Qcho
  */
-public class Exercise10 {
+public class Ex10 {
 
 	public static void main(String[] args) {
 

@@ -46,32 +46,17 @@ import lab.util.Util;
  *
  * @author Qcho
  */
-public class Exercise01 {
+public class Ex01 {
 
     public static void main(String[] args) {
 
 	Integer[] unsortedArray = Util.getRandomIntegerArray(10);
 	System.out.println("array: " + Arrays.toString(unsortedArray));
-	int index = Exercise01.find(unsortedArray, 9);
+	int index = ArrayUtils.find(unsortedArray, 9);
 	System.out.println("Buscar un elemento en un arreglo desordenado. index of element '9': " + index);
 
 	System.out.println("array[" + index + "] -> " + unsortedArray[index]);
 
 	List<Integer> list = new LinkedList<Integer>();
-    }
-
-    /**
-     * finds the first ocurrence's index of element in the array. if element not found, -1 is returned instead.
-     * @param array
-     * @param element
-     * @return -1 if element not in array. the index of the element if exists.
-     */
-    public static <T extends Comparable<? super T>> int find(T[] array, T element) {
-	for (int i = 0; i < array.length; i++) {
-	    if (element.compareTo(array[i]) == 0) {
-		return i;
-	    }
-	}
-	return -1;
     }
 }

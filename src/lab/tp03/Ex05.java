@@ -27,7 +27,7 @@ import java.util.concurrent.LinkedBlockingQueue;
  * cantidad promedio de trabajos en cola.
  */
 
-public class TP03EJ05 {
+public class Ex05 {
 	public static Random randomizer = new Random();
 
 	private double arrivalProbability; // 0 -> 1
@@ -58,19 +58,19 @@ public class TP03EJ05 {
 
 	}
 
-	public TP03EJ05(double arrivalProbability, int minServiceTime, int maxServiceTime, int simulationTime) {
+	public Ex05(double arrivalProbability, int minServiceTime, int maxServiceTime, int simulationTime) {
 		this.arrivalProbability = arrivalProbability;
 		this.minServiceTime = minServiceTime;
 		this.maxServiceTime = maxServiceTime;
 		this.simulationTime = simulationTime;
 	}
 
-	public TP03EJ05() {
+	public Ex05() {
 		this(0.2, 1, 20, 100000);
 	}
 
 	public static void main(String[] args) {
-		TP03EJ05 simulation = new TP03EJ05();
+		Ex05 simulation = new Ex05();
 		simulation.run();
 		
 		System.out.println("jobs printed: " + simulation.getJobsPrinted());
