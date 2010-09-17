@@ -74,20 +74,6 @@ public class AVLTree<T> implements Tree<T> {
 		int rightFactor = (n.right == null) ? -1 : n.right.balanceFactor;
 		n.balanceFactor = leftFactor - rightFactor;
 		
-//		
-//		int leftSignum = Integer.signum(leftFactor);
-//		if (leftSignum == 0){
-//			leftSignum = 1;
-//		}
-//		int rightSignum = Integer.signum(rightFactor);
-//		if (rightSignum == 0){
-//			rightSignum = 1;
-//		}
-//		int nodeSignum = Integer.signum(n.balanceFactor);
-//		if (nodeSignum == 0){
-//			nodeSignum = 1;
-//		}
-		
 		if (n.left.balanceFactor == 2) {
 			if (n.left.left.balanceFactor >= 0){
 				n.left = LL(n.left);
@@ -104,21 +90,21 @@ public class AVLTree<T> implements Tree<T> {
 			}
 		}
 		
-//		if (n.right.balanceFactor == 2) {
-//			if (n.right.left.balanceFactor >= 0){
-//				n.right = LL(n.right);
-//			} else {
-//				n.right = LR(n.right);
-//			}
-//		}
-//		
-//		if (n.right.balanceFactor == -2) {
-//			if (n.right.right.balanceFactor < 0){
-//				n.right = RR(n.right);
-//			} else {
-//				n.right = RL(n.right);
-//			}
-//		}
+		if (n.right.balanceFactor == 2) {
+			if (n.right.left.balanceFactor >= 0){
+				n.right = LL(n.right);
+			} else {
+				n.right = LR(n.right);
+			}
+		}
+		
+		if (n.right.balanceFactor == -2) {
+			if (n.right.right.balanceFactor < 0){
+				n.right = RR(n.right);
+			} else {
+				n.right = RL(n.right);
+			}
+		}
 		
 		
 	}

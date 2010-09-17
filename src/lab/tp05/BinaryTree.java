@@ -28,9 +28,7 @@ public class BinaryTree<T> {
 	}
 
 	public void add(T value) {
-		if (this == null){
-			
-		}
+		//FAIL
 		
 	}
 

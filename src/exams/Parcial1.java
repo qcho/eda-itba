@@ -17,11 +17,6 @@ public class Parcial1 {
 			this.list = new ArrayList<Node>(this.order);
 		}
 
-		
-		
-		
-		
-		
 		public class Node {
 			private int balanceFactor;
 			private T value;
@@ -32,7 +27,7 @@ public class Parcial1 {
 				this.value = value;
 				this.left = left;
 				this.right = right;
-				
+
 				int leftFactor = (this.left == null) ? -1 : this.left.balanceFactor;
 				int rightFactor = (this.right == null) ? -1 : this.right.balanceFactor;
 				this.balanceFactor = leftFactor - rightFactor;
@@ -50,24 +45,18 @@ public class Parcial1 {
 					if (right == null) {
 						return "[" + value + "_" + balanceFactor + "]";
 					}
-					return "[" + value + "_" + balanceFactor  + right + "]";
+					return "[" + value + "_" + balanceFactor + right + "]";
 				}
 				if (right == null) {
-					return "[" + left + value + "_" + balanceFactor  + "]";
+					return "[" + left + value + "_" + balanceFactor + "]";
 				}
-				return "[" + left + value + "_" + balanceFactor  + right + "]";
+				return "[" + left + value + "_" + balanceFactor + right + "]";
 			}
 		}
-		
-		
-		
-		
-		
-		
+
 		public List<T> range(T low, T upp) {
 			List<T> list = new ArrayList<T>();
-			
-			
+
 			return list;
 		}
 
